@@ -1,0 +1,25 @@
+{
+  "name": "ngx-tutorial-creator",
+  "version": "1.0.0-alpha.0",
+  "repository": "https://github.com/KamilPolanowski/ngx-tutorial-creator",
+  "author": "kamil polanowski <kampolanowski44@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@angular/core": "7.1.4",
+    "@angular/common": "7.1.4"
+  },
+  "main": "bundles/ngx-tutorial-creator.umd.js",
+  "module": "fesm5/ngx-tutorial-creator.js",
+  "es2015": "fesm2015/ngx-tutorial-creator.js",
+  "esm5": "esm5/ngx-tutorial-creator.js",
+  "esm2015": "esm2015/ngx-tutorial-creator.js",
+  "fesm5": "fesm5/ngx-tutorial-creator.js",
+  "fesm2015": "fesm2015/ngx-tutorial-creator.js",
+  "typings": "ngx-tutorial-creator.d.ts",
+  "metadata": "ngx-tutorial-creator.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
