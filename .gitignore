@@ -60,3 +60,5 @@ typings/
 dist/
 .ng_build/
 /src/ngx-tutorial-creator
+package — kopia.json
+package-lock.json
