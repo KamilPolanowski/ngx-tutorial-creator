@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MyLibModule } from '@ngx-tutorial-creator';
+import { TutorialModule } from '@ngx-tutorial-creator';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { MyLibModule } from '@ngx-tutorial-creator';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MyLibModule.forRoot()
+    TutorialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
