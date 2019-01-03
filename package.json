@@ -5,13 +5,14 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve dev",
+    "start": "ng serve dev --aot=true --prod=true --progress=true",
     "build": "ng build",
     "build:app": "cpr dist/ngx-tutorial-creator src/@ngx-tutorial-creator && ng build packages && rimraf src/@ngx-tutorial-creator",
     "build:lib": "rimraf dist && ng-packagr -p ngx-tutorial-creator/package.json",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "npm run build:lib && ng build dev --prod --base-href dev && npx ngh --dir=dist/app"
   },
   "dependencies": {
     "@angular/common": "~7.1.4",
@@ -30,7 +31,9 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.11.4",
     "@angular-devkit/schematics": "~7.1.4",
+    "@angular/animations": "^7.1.4",
     "@angular/cli": "~7.1.4",
+    "@angular/cdk": "^7.2.0",
     "@angular/compiler-cli": "~7.1.4",
     "@angular/language-service": "~7.1.4",
     "@types/jasmine": "~3.3.5",

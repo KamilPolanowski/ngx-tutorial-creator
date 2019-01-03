@@ -1,0 +1,19 @@
+.tutorial-stepper {
+  max-height: 935px;
+  overflow: hidden;
+  .mat-vertical-content {
+    padding: 0 !important;
+  }
+}
+
+.tutorial-stepper:hover {
+  overflow: overlay;
+}
+
+.tutorial-stepper::-webkit-scrollbar {
+  width: 3px;
+}
+
+.tutorial-stepper::-webkit-scrollbar-thumb {
+  background-color: #eaeaea;
+}

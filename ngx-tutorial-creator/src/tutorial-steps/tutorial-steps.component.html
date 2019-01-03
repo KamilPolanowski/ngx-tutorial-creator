@@ -1,0 +1,10 @@
+<div class="tutorial-stepper">
+  <mat-vertical-stepper (selectionChange)="stepChanged($event)">
+    <ng-template matStepperIcon="edit" let-index="index">
+      {{ index + 1 }}
+    </ng-template>
+    <mat-step *ngFor="let step of tutorialSteps">
+      <ng-template matStepLabel>{{ step.name }}</ng-template>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
