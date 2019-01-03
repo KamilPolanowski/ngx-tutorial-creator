@@ -110,7 +110,7 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "ngx-tc",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

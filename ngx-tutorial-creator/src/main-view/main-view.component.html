@@ -1,0 +1,4 @@
+<div class="main-view">
+  <ngx-tc-tutorial-steps [tutorialSteps]="tutorialParsed.tutorial_steps" (newSelectedStepsIndex)="setCurrentStep($event)" class="tutorial-steps-panel"></ngx-tc-tutorial-steps>
+  <ngx-tc-tutorial [tutorial]="tutorialParsed" [currentStep]="stepSelected" [stepIndex]="stepIndex" class="tutorial-panel"></ngx-tc-tutorial>
+</div>

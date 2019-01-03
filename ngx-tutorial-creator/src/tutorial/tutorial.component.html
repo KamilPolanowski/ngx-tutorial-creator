@@ -1,0 +1,18 @@
+<div class="tutorial-overwiew">
+  <div>
+    <mat-toolbar color="primary">{{ tutorial.tutorial_name }}</mat-toolbar>
+  </div>
+  <div class="tutorial-container">
+    <mat-card *ngIf="!!currentStep; else missing" class="content">
+      <div>
+        <h1>{{ stepIndex + 1 }}. {{ currentStep.name }}</h1>
+      </div>
+      <mat-card-content [innerHtml]="currentStep.description">
+        
+      </mat-card-content>
+    </mat-card>
+    <ng-template #missing>
+      <div>Something wrong with the format of this tutorial step.</div>
+    </ng-template>
+  </div>
+</div>
