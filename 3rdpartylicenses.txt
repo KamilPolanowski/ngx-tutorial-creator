@@ -332,12 +332,12 @@ MIT
 
 @angular/material/stepper
 
+@angular/forms
+MIT
+
 @angular/material/card
 
 @angular/material/toolbar
-
-@angular/forms
-MIT
 
 core-js
 MIT
