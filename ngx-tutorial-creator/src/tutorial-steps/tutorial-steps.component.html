@@ -3,7 +3,7 @@
     <ng-template matStepperIcon="edit" let-index="index">
       {{ index + 1 }}
     </ng-template>
-    <mat-step *ngFor="let step of tutorialSteps">
+    <mat-step *ngFor="let step of tutorialSteps; let i = index" [stepControl]="tutorialFormGroup.get('overallCtrl')">
       <ng-template matStepLabel>{{ step.name }}</ng-template>
     </mat-step>
   </mat-vertical-stepper>

@@ -16,7 +16,7 @@ export class MainViewComponent implements OnInit {
     tutorial_steps: Array(8).fill(
       {
         name: 'siema',
-        description: '<b>ale nie żydom</b>'
+        description: '<b>blalala</b>'
       }
     )
   }
